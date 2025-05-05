@@ -1,8 +1,8 @@
 # socket-io
-
+```
 npm i socket.io
 npm i @types/socket.io @types/socket.io-client
-
+```
 
 # client initial polling connection
 
@@ -31,7 +31,7 @@ response is encoded
 
 # client websocket connection
 
-default pollig connection is kept if client cannot establish the websocket connection
+default polling connection is kept if client cannot establish the websocket connection
 
 ```
 GET wss://server.com/socket.io/?EIO=3&transport=websocket&sid=36Yib8-rSutGQYLfAAAD
