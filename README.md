@@ -1,8 +1,5 @@
-# socket-io
-```
-npm i socket.io
-npm i @types/socket.io @types/socket.io-client
-```
+# protocols
+
 
 ## client initial polling connection
 
@@ -16,10 +13,10 @@ GET https://server.com/socket.io/?EIO=3&transport=polling&t=ML4jUwU&b64=1
 {
   "type": "open",
   "data": {
-    "sid": "36Yib8-rSutGQYLfAAAD",  // L’ID de la session
-    "upgrades": ["websocket"],      // La liste des upgrades de protocoles disponibles
-    "pingInterval": 25000,          // L’intervalle pour le ping du heartbeat
-    "pingTimeout": 20000             // Le timeout pour le ping du heartbeat
+    "sid": "36Yib8-rSutGQYLfAAAD",  // session id
+    "upgrades": ["websocket"],      // protocol available
+    "pingInterval": 25000,          // heartbeat interval
+    "pingTimeout": 20000            // heartbeat timeout
   }
 }
 ```
@@ -36,5 +33,4 @@ default polling connection is kept if client cannot establish the websocket conn
 ```
 GET wss://server.com/socket.io/?EIO=3&transport=websocket&sid=36Yib8-rSutGQYLfAAAD
 ```
-
 
